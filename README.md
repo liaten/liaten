@@ -91,3 +91,34 @@ SHA1:
 SHA256:
 ```
 The package is your id for the tweak (com.example.package) The name is the name of your tweak (Test Package) The version is, well the version of your tweak (10.25.1-2) Architecture is either iphone-os-arm or iphoneos-arm64 in most cases, if you dont know what this is, put iphoneos-arm The description is the description of the tweak (This is a test package!) Maintainer is whoever is keeping the package updated / maintaned on the repo (most likely you youremail@ifyouwant.com) Author is the creator of the tweak (Author of the tweak hisorheremail@ifyouwant.com) Section is the category it fits into the best (Tweak) or (Theme) Depends is anything it might need to work properly Filename is the name of the deb file if the deb was in the debs folder it would be debs/debfilehere.deb Size of the file in bytes (288338) MD5sum is the MD5 hash <b>IN LOWERCASE</b>. Find the md5 on a website or something. SHA1 is the SHA1 hash <b>IN LOWERCASE</b>. Find the SHA1 on a website or something. SHA256 is the SHA256 hash <b>IN LOWERCASE</b>. Find the SHA256 on a website or something.
+Now, once that is configured it might look something like this (this is my Pwn Respring themes Package file).
+```
+Package: xyz.bigbadevan.pwnrespring
+Name: Pwn Respring
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Respring with a Pwnapple!
+Maintainer: Evan <evan@bigbadevan.xyz>
+Author: Evan <evan@bigbadevan.xyz>
+Section: Themes
+Depends: com.wizages.bae, com.anemonetheming.anemone, com.wizages.springchanger
+Filename: debs/xyz.bigbadevan.pwnrespring_iphoneos-arm_1.0.deb
+Size: 59498
+MD5sum: a0c466f73e7b4bc4a0b6376f08b1e6f4
+SHA1: 9e18235b553d27923e65c06d1046614c3b3c9f56
+SHA256: 9b7398fe1bee4a25406113c860f8c6963d433d06252dbf7eba150d238b7ca9eb
+```
+The 2nd last thing is to save those and zip Packages <b>Not Release</b> to bzip2. To do this, save the Packages file and right click it (assuming you are on windows and using 7zip) hover over 7-Zip and press Add to archive... then a gui will appear, under Archive Format chose bzip2.
+Delete Packages if you want.
+### Part 4: Commit the changes and enable Github pages
+The final step is to commit the changes and enable Github pages.
+
+Using Git to commit the changes: open git like you did earlier and go to the directory you cloned it to, type `git add .` then `git commit -m "Initial Commit"` then `git push` then sign into github.
+
+Using the Github Desktop App to commit the changes: select all the modified files in the Github app (if they aren't already) and create a message on the bottom left (i.e. Initial Commit) and hit commit to master. then on the top middle-ish you will see a button with a down arrow or a cloud looking thing (Your turn to figure it out ;) ) The changes have been saved.
+
+To enable Github Pages go to your repo, Find Settings and scroll down to Github Pages, under source you will see none, change that to Master branch press the save button and then the page will refresh. Scroll down again and it should say The site is published or something (I forgot ;) ) that link is the link for your repo. Add it via. Cydia and there you go! It should work! Please feel free to post any issues in the comments. Thanks for reading this <3
+
+EDIT: If you want an example of what it should look like or add a Cydia Icon or HTML depictions. Go to https://github.com/bigbadevan/cydia
+
+You should also add my repo: cydia.bigbadevan.xyz
