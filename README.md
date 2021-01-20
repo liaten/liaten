@@ -1,44 +1,35 @@
-~~[Tutorial] Create a Cydia repository using Github Pages~~
-# [Учебное пособие] Создание репозитория Cydia с помощью Github Pages (20.12.2018)
+# [Руководство] Создание Cydia репозитория с помощью Github Pages (20.12.2018)
 Ссылка на оригинал: https://www.reddit.com/r/jailbreak/comments/90gpli/tutorial_create_a_cydia_repository_using_github/
 
-~~I had to repost this because my post was showing removed, but I hope it works now.~~
+## Создание Cydia репозитория с использованием Github Pages
 
-Мне пришлось сделать репост, потому что мой пост показывался удаленным, но я надеюсь, что теперь он работает.
+В этом руководстве я вам буду показывать, как создать Github Pages. Моя цель в этом руководстве - создание Cydia репозитория и объяснение настройки этого репозитория как можно простым способом.
 
-~~Creating a Cydia Repository using Github Pages~~
-## Создание репозитория Cydia с использованием страниц Github
+## Часть 0: Для чего используется Cydia репозиторий?
+Cydia репозиторий  может использоваться для множества вещей, от создания настроек (твиков `от англ. tweaks`) и тем до их размещения. Я создал это руководство и доверил его вам, чтобы вы не использовали его для создания пиратских репозиториев.
 
-~~In this tutorial I will be showing you how to create a Github Pages. My goal for this tutorial is for you to create a Cydia Repository and me explaining how to setup this repo as simply as possible.~~
-В этом руководстве я вам покажу, как создать Github Pages. Моя цель в этом руководстве создание Cydia репозитория и объяснение, как настроить этот репозиторий как можно проще.
+## Подготовка
 
-## Part 0: What is a Cydia repository used for?
-A Cydia repository can be used for many things, from creating tweak and themes to hosting tweaks and themes. I have created this tutorial and trusted you all to not use this for creating piracy repos.
+Вот несколько важных компонентов, необходимых для установки репозитория:
+1) Учетная запись Github с подтвержденным адресом электронной почты, не отмеченная или не имеющая разрешения на использование страниц Github.
+2) Git или приложение Github Desktop
+3) Программа архивации, поддерживающая архивацию bzip2, например 7-Zip (https://www.7-zip.org/download.html)
+4) Взломанное устройство, на котором вы можете протестировать свое репо (необязательно, но рекомендуется) (https://http://canijailbreak.com/)
+5) Notepad ++ или подобный (Я использую visual studio (либо vscode))
 
-## Preparations
-There are a few things you will need to have before setting up a repo:
-1) A Github account with a verified email and is not flagged or not permitted to use Github Pages
-2) Git or the Github Desktop app
-3) Archiving program that supports archiving bzip2 like 7-Zip
-4) A jailbroken device in which you can test your repo (Optional but recommended)
-5) Notepad++ or simillar (Optional but recommended)
-
-## Part 1: Setting up your Github repository
-Now if you have already created a Github repo or know how to make one, you do not need to read the rest of Part 1, if not you should read this part.
-
-The first step is to obviously sign into your Github account and click "Start A Project" or "New Repository"
-
-You should be in the Create a New Repository page, under "Repository name", you will put the name of your repository, this can be anything you want that is not currently used on your Github account.
-
-If you want, you can set a description do explain what this repo does, if not you can skip the description box.
-
-If you have a paid Github account, then you can make the repository private if you prefer, I don't know if this conflicts with the Github pages as I do not own a paid Github account. If you do not know what a private repository is, or what a paid Github account is, then you do not need to worry about this. By default it should be public.
-
-Next is the "Initialize this repository with a README" this is up to you, I personally do not use it, but if you prefer using a README.md or you are using the online uploader (Which I DO NOT recommend by the way) then there isn't a big problem with not having a README.md file.
-
+## Часть 1: Настраиваем ваш репозиторий Github
+Теперь, если вы уже создали Github репозиторий или знаете, как его создать, то вам не нужно читать оставшуюся часть 1-й части, если нет, то вам стоит прочитать эту часть.
+Первый шаг - очевидно, войти в свою учетную запись Github и нажать на "+" -> "New Repository"
+На странице создания нового репозитория, в разделе «имя репозитория» вы должны указать имя своего репозитория, это может быть что угодно, что в настоящее время не используется в вашей учетной записи Github.
+Если вы хотите, то вы можете установить описание, чтобы объяснить, чем занимается этот репозиторий, если нет, то вы можете пропустить поле описания.
+Если у вас есть платная учетная запись Github, то вы можете сделать репозиторий частным, если хотите. Я не знаю, конфликтует ли это со страницами Github, поскольку у меня нет платной учетной записи Github. Если вы не знаете, что такое частный репозиторий или что такое платная учетная запись Github, вам не нужно об этом беспокоиться. По умолчанию он должен быть публичным.
+Далее идет «Initialize this repository with a README», это зависит от вас, я лично не использую его, но если вы предпочитаете использовать README.md или используете онлайн-загрузчик (что, кстати, я НЕ рекомендую) тогда нет большой проблемы в отсутствии файла README.md.
 The last part of creating the repository is the .gitignore and License, unless you have a license for the repo (i.e. MIT or GNU license) then you can ignore these. .gitignore isn't a use for a Cydia Repo as gitignore's are normally for putting in projects.
-
 Finally, you can press "Create Repository".
+Последняя часть создания репозитория - это .gitignore и License, если у вас нет лицензии на репо (т.е. лицензии MIT или GNU), вы можете игнорировать их. .gitignore не используется для Cydia репозитория, поскольку .gitignore обычно используется для размещения в проектах.
+Наконец, вы можете нажать «Create Repository».
+
+
 
 ## Part 2: Cloning the repository
 If you know how to clone a repository then you can skip Part 2, I am explaining this to people who are new to Git and/or Github
