@@ -30,22 +30,20 @@ Cydia репозиторий  может использоваться для м�
 
 Далее идет «Initialize this repository with a README», это зависит от вас, я лично не использую его, но если вы предпочитаете использовать README.md или используете онлайн-загрузчик (что, кстати, я НЕ рекомендую) тогда нет большой проблемы в отсутствии файла README.md.
 
-The last part of creating the repository is the .gitignore and License, unless you have a license for the repo (i.e. MIT or GNU license) then you can ignore these. .gitignore isn't a use for a Cydia Repo as gitignore's are normally for putting in projects.
-
-Finally, you can press "Create Repository".
-
 Последняя часть создания репозитория - это .gitignore и License, если у вас нет лицензии на репо (т.е. лицензии MIT или GNU), вы можете игнорировать их. .gitignore не используется для Cydia репозитория, поскольку .gitignore обычно используется для размещения в проектах.
 
 Наконец, вы можете нажать «Create Repository».
 
-## Part 2: Cloning the repository
-If you know how to clone a repository then you can skip Part 2, I am explaining this to people who are new to Git and/or Github
+## Часть 2: Клонирование репозитория
+Если вы знаете, как клонировать репозиторий, то вы можете пропустить Часть 2, я объясняю это людям, которые плохо знакомы с Git и/или Github.
 
-In Git, You will need the git link, so you will want to press Clone or Download and it should say Clone with HTTPS, copy the link provided. If you do not have the README.md file, it should show the link in the middle-ish of the page. Open Git Bash if on Windows, on anything else open your terminal. Go to a directory that you want to clone it into, type `git clone` then the git link you got earlier. It will clone the repository to your system where later you will post it to the repo.
+В Git вам понадобится ссылка git, поэтому вы захотите нажать `Clone` или `Download`, и он должен сказать `Clone with HTTPS`, скопируйте предоставленную ссылку. Если у вас нет файла README.md, он должен показать ссылку посередине страницы. Откройте Git Bash, если в Windows, в любом другом случае откройте свой терминал. Перейдите в каталог, в который вы хотите его клонировать, введите `git clone`, затем ссылку git, которую вы получили ранее. Так склонируется репозиторий в вашу систему, где позже вы разместите его в репозиторий.
 
 In the Github Desktop App, sign into your account and go to File > Clone Repository, select the repo you chose earlier, keep the "Local path" in mind, and press "Clone".
 
-Open a file browser and navigate to the directory.
+В Github Desktop войдите в свою учетную запись и перейдите в меню `File` > `Clone Repository`, выберите репозиторий, который вы выбрали ранее, запомните `Local path` и нажмите `Clone`.
+
+Откройте файловый браузер и перейдите в каталог.
 
 ## Part 3: Setting up the repository
 Now is the fun part, setting up the repository to allow Cydia and the repository to exchange information with each other.
