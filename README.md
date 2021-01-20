@@ -45,15 +45,15 @@ In the Github Desktop App, sign into your account and go to File > Clone Reposit
 
 Откройте файловый браузер и перейдите в каталог.
 
-## Part 3: Setting up the repository
-Now is the fun part, setting up the repository to allow Cydia and the repository to exchange information with each other.
+## Часть 3: Настройка репозитория
+Теперь самое интересное - настройка репозитория, чтобы позволить обмен информацией между Cydia и репозиторием.
 
-### Step 1: Create a Release and Packages file.
-Open a text editor and save 2 empty files: Release and Packages (MAKE SURE THERE IS NO .txt AT THE END!)
+### Шаг 1. Создайте файл Release и Packages
+Откройте текстовый редактор и сохраните 2 пустых файла: Release и Packages (УБЕДИТЕСЬ, ЧТО В КОНЦЕ НЕТ .txt!)
 
-### Step 2: Create a folder called debs
-### Step 3: Create a file called index.html
-Inside that file type
+### Шаг 2. Создайте папку с именем debs
+### Шаг 3. Создайте файл с именем index.html
+Внутри этого файла напишите:
 ```html
 <!DOCTYPE html>
 <html>
@@ -63,8 +63,8 @@ Inside that file type
 </body>
 </html>
 ```
-### Step 4: Modify Release
-Inside Release customize the text in brackets
+### Шаг 4: Измените Release
+Внутри Release настройте текст в скобках.
 ```
 Origin: (Modify)
 Label: (Modify)
@@ -75,9 +75,11 @@ Architectures: iphoneos-arm
 Components: main
 Description: (Modify)
 ```
-They can all be your repo name, it doesnt matter.
-## Part 4: Adding a tweak/theme
-This is a half-complicated part and I will explain it as simply as possible. Inside of your packages you will need to put this
+Все они могут быть вашим именем репозитория, это не имеет значения.
+
+## Часть 4: Добавляем твик/тему
+
+Это наполовину сложная часть, и я объясню ее как можно проще. Внутри ваших packages (пакетов) вам нужно будет поместить это
 ```
 Package: 
 Name: 
@@ -94,8 +96,32 @@ MD5sum:
 SHA1: 
 SHA256:
 ```
-The package is your id for the tweak (com.example.package) The name is the name of your tweak (Test Package) The version is, well the version of your tweak (10.25.1-2) Architecture is either iphone-os-arm or iphoneos-arm64 in most cases, if you dont know what this is, put iphoneos-arm The description is the description of the tweak (This is a test package!) Maintainer is whoever is keeping the package updated / maintaned on the repo (most likely you youremail@ifyouwant.com) Author is the creator of the tweak (Author of the tweak hisorheremail@ifyouwant.com) Section is the category it fits into the best (Tweak) or (Theme) Depends is anything it might need to work properly Filename is the name of the deb file if the deb was in the debs folder it would be debs/debfilehere.deb Size of the file in bytes (288338) MD5sum is the MD5 hash <b>IN LOWERCASE</b>. Find the md5 on a website or something. SHA1 is the SHA1 hash <b>IN LOWERCASE</b>. Find the SHA1 on a website or something. SHA256 is the SHA256 hash <b>IN LOWERCASE</b>. Find the SHA256 on a website or something.
-Now, once that is configured it might look something like this (this is my Pwn Respring themes Package file).
+
+Package (пакет) - это ваш ID твика (com.example.package).
+
+Name - это имя вашего твика (Test Package).
+
+Version - это ну версия вашего твика (10.25.1-2).
+
+Architecture - это или iphone-os-arm или iphoneos-arm64 в большинстве случаев, если вы не знаете, что это, ставьте iphoneos-arm.
+
+Description - это описание настройки (это тестовый пакет!).
+
+Maintainer - это тот, кто обновляет / обслуживает пакет на репозитории (скорее всего, это будете вы - youremail@ifyouwant.com).
+
+Author - создатель твика (Автор твика hisorheremail@ifyouwant.com).
+
+Section - это раздел, в который он входит лучше всего (Твик) или (Тема). Зависит от того, что может быть необходимо для правильной работы.
+
+Filename - это имя файла deb, если deb был в папке debs, это будет debs / debfilehere.deb.
+
+Size - Размер файла в байтах (288338) MD5sum - это хэш MD5 <b> СТРОЧНЫМИ БУКВАМИ </b>. Найдите md5 на сайте или еще где-нибудь.
+
+SHA1 - это хэш SHA1 <b> СТРОЧНЫМИ БУКВАМИ </b>. Найдите SHA1 на веб-сайте или еще где-нибудь.
+
+SHA256 - это хэш SHA256 <b> СТРОЧНЫМИ БУКВАМИ </b>. Найдите SHA256 на веб-сайте или еще где-нибудь.
+
+Теперь, когда это настроено, файл может выглядеть примерно так (это мой Package файл темы Pwn Respring):
 ```
 Package: xyz.bigbadevan.pwnrespring
 Name: Pwn Respring
