@@ -76,7 +76,7 @@ Components: main
 Description: (Modify)
 ```
 They can all be your repo name, it doesnt matter.
-### Part 4: Adding a tweak/theme
+## Part 4: Adding a tweak/theme
 This is a half-complicated part and I will explain it as simply as possible. Inside of your packages you will need to put this
 ```
 Package: 
@@ -114,7 +114,7 @@ SHA256: 9b7398fe1bee4a25406113c860f8c6963d433d06252dbf7eba150d238b7ca9eb
 ```
 The 2nd last thing is to save those and zip Packages <b>Not Release</b> to bzip2. To do this, save the Packages file and right click it (assuming you are on windows and using 7zip) hover over 7-Zip and press Add to archive... then a gui will appear, under Archive Format chose bzip2.
 Delete Packages if you want.
-### Part 5: Commit the changes and enable Github pages
+## Part 5: Commit the changes and enable Github pages
 The final step is to commit the changes and enable Github pages.
 
 Using Git to commit the changes: open git like you did earlier and go to the directory you cloned it to, type `git add .` then `git commit -m "Initial Commit"` then `git push` then sign into github.
