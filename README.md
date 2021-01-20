@@ -1,4 +1,5 @@
-# [Tutorial] Create a Cydia repository using Github Pages
+~~# [Tutorial] Create a Cydia repository using Github Pages~~
+# [Учебное пособие] Создание репозитория Cydia с помощью Github Pages (20.12.2018)
 I had to repost this because my post was showing removed, but I hope it works now.
 
 Creating a Cydia Repository using Github Pages
