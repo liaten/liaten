@@ -1,12 +1,16 @@
-# ~~[Tutorial] Create a Cydia repository using Github Pages~~
+~~[Tutorial] Create a Cydia repository using Github Pages~~
 # [Учебное пособие] Создание репозитория Cydia с помощью Github Pages (20.12.2018)
 Ссылка на оригинал: https://www.reddit.com/r/jailbreak/comments/90gpli/tutorial_create_a_cydia_repository_using_github/
 
 ~~I had to repost this because my post was showing removed, but I hope it works now.~~
+
 Мне пришлось сделать репост, потому что мой пост показывался удаленным, но я надеюсь, что теперь он работает.
 
-## Creating a Cydia Repository using Github Pages
-In this tutorial I will be showing you how to create a Github Pages. My goal for this tutorial is for you to create a Cydia Repository and me explaining how to setup this repo as simply as possible.
+~~Creating a Cydia Repository using Github Pages~~
+## Создание репозитория Cydia с использованием страниц Github
+
+~~In this tutorial I will be showing you how to create a Github Pages. My goal for this tutorial is for you to create a Cydia Repository and me explaining how to setup this repo as simply as possible.~~
+В этом руководстве я вам покажу, как создать Github Pages. Моя цель в этом руководстве создание Cydia репозитория и объяснение, как настроить этот репозиторий как можно проще.
 
 ## Part 0: What is a Cydia repository used for?
 A Cydia repository can be used for many things, from creating tweak and themes to hosting tweaks and themes. I have created this tutorial and trusted you all to not use this for creating piracy repos.
