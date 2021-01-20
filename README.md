@@ -1,10 +1,10 @@
-[Tutorial] Create a Cydia repository using Github Pages
+# [Tutorial] Create a Cydia repository using Github Pages
 I had to repost this because my post was showing removed, but I hope it works now.
 
 Creating a Cydia Repository using Github Pages
 In this tutorial I will be showing you how to create a Github Pages. My goal for this tutorial is for you to create a Cydia Repository and me explaining how to setup this repo as simply as possible.
 
-Part 0: What is a Cydia repository used for?
+## Part 0: What is a Cydia repository used for?
 A Cydia repository can be used for many things, from creating tweak and themes to hosting tweaks and themes. I have created this tutorial and trusted you all to not use this for creating piracy repos.
 
 Preparations
@@ -15,7 +15,7 @@ There are a few things you will need to have before setting up a repo:
 4) A jailbroken device in which you can test your repo (Optional but recommended)
 5) Notepad++ or simillar (Optional but recommended)
 
-Part 1: Setting up your Github repository
+## Part 1: Setting up your Github repository
 Now if you have already created a Github repo or know how to make one, you do not need to read the rest of Part 1, if not you should read this part.
 
 The first step is to obviously sign into your Github account and click "Start A Project" or "New Repository"
@@ -32,7 +32,7 @@ The last part of creating the repository is the .gitignore and License, unless y
 
 Finally, you can press "Create Repository".
 
-Part 2: Cloning the repository
+## Part 2: Cloning the repository
 If you know how to clone a repository then you can skip Part 2, I am explaining this to people who are new to Git and/or Github
 
 In Git, You will need the git link, so you will want to press Clone or Download and it should say Clone with HTTPS, copy the link provided. If you do not have the README.md file, it should show the link in the middle-ish of the page. Open Git Bash if on Windows, on anything else open your terminal. Go to a directory that you want to clone it into, type `git clone` then the git link you got earlier. It will clone the repository to your system where later you will post it to the repo.
