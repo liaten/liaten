@@ -40,3 +40,48 @@ In Git, You will need the git link, so you will want to press Clone or Download 
 In the Github Desktop App, sign into your account and go to File > Clone Repository, select the repo you chose earlier, keep the "Local path" in mind, and press "Clone".
 
 Open a file browser and navigate to the directory.
+
+## Part 3: Setting up the repository
+Now is the fun part, setting up the repository to allow Cydia and the repository to exchange information with each other.
+
+### Step 1: Create a Release and Packages file.
+Open a text editor and save 2 empty files: Release and Packages (MAKE SURE THERE IS NO .txt AT THE END!)
+
+### Step 2: Create a folder called debs
+### Step 3: Create a file called index.html
+Inside that file type
+`<!DOCTYPE html>
+<html>
+<body>
+<h1>Hello World!</h1>
+<p>This is a Cydia repo!</p>
+</body>
+</html>`
+### Step 4: Modify Release
+Inside Release customize the text in brackets
+`Origin: (Modify)
+Label: (Modify)
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm
+Components: main
+Description: (Modify)`
+They can all be your repo name, it doesnt matter.
+### Part 3: Adding a tweak/theme
+This is a half-complicated part and I will explain it as simply as possible. Inside of your packages you will need to put this
+`Package: 
+Name: 
+Version: 
+Architecture: 
+Description: 
+Maintainer: 
+Author: 
+Section: 
+Depends: 
+Filename: 
+Size: 
+MD5sum: 
+SHA1: 
+SHA256:
+`
