@@ -35,7 +35,7 @@ Finally, you can press "Create Repository".
 Part 2: Cloning the repository
 If you know how to clone a repository then you can skip Part 2, I am explaining this to people who are new to Git and/or Github
 
-In Git, You will need the git link, so you will want to press Clone or Download and it should say Clone with HTTPS, copy the link provided. If you do not have the README.md file, it should show the link in the middle-ish of the page. Open Git Bash if on Windows, on anything else open your terminal. Go to a directory that you want to clone it into, type <addr>git clone</addr> then the git link you got earlier. It will clone the repository to your system where later you will post it to the repo.
+In Git, You will need the git link, so you will want to press Clone or Download and it should say Clone with HTTPS, copy the link provided. If you do not have the README.md file, it should show the link in the middle-ish of the page. Open Git Bash if on Windows, on anything else open your terminal. Go to a directory that you want to clone it into, type `git clone` then the git link you got earlier. It will clone the repository to your system where later you will post it to the repo.
 
 In the Github Desktop App, sign into your account and go to File > Clone Repository, select the repo you chose earlier, keep the "Local path" in mind, and press "Clone".
 
