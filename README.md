@@ -50,27 +50,32 @@ Open a text editor and save 2 empty files: Release and Packages (MAKE SURE THERE
 ### Step 2: Create a folder called debs
 ### Step 3: Create a file called index.html
 Inside that file type
-`<!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html>
 <body>
 <h1>Hello World!</h1>
 <p>This is a Cydia repo!</p>
 </body>
-</html>`
+</html>
+```
 ### Step 4: Modify Release
 Inside Release customize the text in brackets
-`Origin: (Modify)
+```
+Origin: (Modify)
 Label: (Modify)
 Suite: stable
 Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm
 Components: main
-Description: (Modify)`
+Description: (Modify)
+```
 They can all be your repo name, it doesnt matter.
 ### Part 3: Adding a tweak/theme
 This is a half-complicated part and I will explain it as simply as possible. Inside of your packages you will need to put this
-`Package: 
+```
+Package: 
 Name: 
 Version: 
 Architecture: 
@@ -84,4 +89,4 @@ Size:
 MD5sum: 
 SHA1: 
 SHA256:
-`
+```
