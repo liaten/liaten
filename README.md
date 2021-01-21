@@ -140,6 +140,9 @@ SHA256: 9b7398fe1bee4a25406113c860f8c6963d433d06252dbf7eba150d238b7ca9eb
 ```
 The 2nd last thing is to save those and zip Packages <b>Not Release</b> to bzip2. To do this, save the Packages file and right click it (assuming you are on windows and using 7zip) hover over 7-Zip and press Add to archive... then a gui will appear, under Archive Format chose bzip2.
 Delete Packages if you want.
+
+Второе, что нужно сделать, это сохранить их и заархивировать пакеты <b> Not Release </b> в bzip2. Для этого сохраните файл Packages и щелкните его правой кнопкой мыши (при условии, что вы находитесь в Windows и используете 7zip), наведите указатель мыши на 7-Zip и нажмите «Добавить в архив» ... затем появится графический интерфейс, в разделе «Формат архива» выберите bzip2.
+Если хотите, удалите пакеты.
 ## Part 5: Commit the changes and enable Github pages
 The final step is to commit the changes and enable Github pages.
 
