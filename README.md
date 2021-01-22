@@ -138,20 +138,15 @@ MD5sum: a0c466f73e7b4bc4a0b6376f08b1e6f4
 SHA1: 9e18235b553d27923e65c06d1046614c3b3c9f56
 SHA256: 9b7398fe1bee4a25406113c860f8c6963d433d06252dbf7eba150d238b7ca9eb
 ```
-The 2nd last thing is to save those and zip Packages <b>Not Release</b> to bzip2. To do this, save the Packages file and right click it (assuming you are on windows and using 7zip) hover over 7-Zip and press Add to archive... then a gui will appear, under Archive Format chose bzip2.
-Delete Packages if you want.
 
 Второе, что нужно сделать, это сохранить их и заархивировать пакеты <b> Not Release </b> в bzip2. Для этого сохраните файл Packages и щелкните его правой кнопкой мыши (при условии, что вы находитесь в Windows и используете 7zip), наведите указатель мыши на 7-Zip и нажмите «Добавить в архив» ... затем появится графический интерфейс, в разделе «Формат архива» выберите bzip2.
+
 Если хотите, удалите пакеты.
-## Part 5: Commit the changes and enable Github pages
-The final step is to commit the changes and enable Github pages.
+
+## Часть 5: Зафиксируйте изменения и включите Github pages
 
 Using Git to commit the changes: open git like you did earlier and go to the directory you cloned it to, type `git add .` then `git commit -m "Initial Commit"` then `git push` then sign into github.
 
 Using the Github Desktop App to commit the changes: select all the modified files in the Github app (if they aren't already) and create a message on the bottom left (i.e. Initial Commit) and hit commit to master. then on the top middle-ish you will see a button with a down arrow or a cloud looking thing (Your turn to figure it out ;) ) The changes have been saved.
 
-To enable Github Pages go to your repo, Find Settings and scroll down to Github Pages, under source you will see none, change that to Master branch press the save button and then the page will refresh. Scroll down again and it should say The site is published or something (I forgot ;) ) that link is the link for your repo. Add it via. Cydia and there you go! It should work! Please feel free to post any issues in the comments. Thanks for reading this <3
-
-EDIT: If you want an example of what it should look like or add a Cydia Icon or HTML depictions. Go to https://github.com/bigbadevan/cydia
-
-You should also add my repo: cydia.bigbadevan.xyz
+To enable Github Pages go to your repo, Find Settings and scroll down to Github Pages, under source you will see none, change that to Master branch press the save button and then the page will refresh. Scroll down again and it should say The site is published or something (I forgot ;) ) that link is the link for your repo. Add it via. Cydia and there you go! It should work! Please feel free to post any issues in the comments.
