@@ -145,8 +145,12 @@ SHA256: 9b7398fe1bee4a25406113c860f8c6963d433d06252dbf7eba150d238b7ca9eb
 
 ## Часть 5: Зафиксируйте изменения и включите Github pages
 
-Using Git to commit the changes: open git like you did earlier and go to the directory you cloned it to, type `git add .` then `git commit -m "Initial Commit"` then `git push` then sign into github.
+Использование Git для фиксации изменений (commit): откройте Git, как вы это делали ранее, и перейдите в каталог (директорию), в который вы его клонировали, введите `git add`, затем `git commit -m "Initial Commit" `, затем `git push`, затем войдите в Github.
 
 Using the Github Desktop App to commit the changes: select all the modified files in the Github app (if they aren't already) and create a message on the bottom left (i.e. Initial Commit) and hit commit to master. then on the top middle-ish you will see a button with a down arrow or a cloud looking thing (Your turn to figure it out ;) ) The changes have been saved.
 
+Использование приложения Github Desktop для фиксации изменений: выберите все изменённые файлы в приложении Github (если они еще не были изменены), создайте сообщение в левом нижнем углу (т.е. Initial Commit) и нажмите фиксировать для главной ветки (commit to master). Затем вверху посередине вы увидите кнопку со стрелкой вниз или нечто похожее на облако. Изменения сохранены.
+
 To enable Github Pages go to your repo, Find Settings and scroll down to Github Pages, under source you will see none, change that to Master branch press the save button and then the page will refresh. Scroll down again and it should say The site is published or something (I forgot ;) ) that link is the link for your repo. Add it via. Cydia and there you go! It should work! Please feel free to post any issues in the comments.
+
+Чтобы включить Github Pages, перейдите в свое репо, найдите настройки и прокрутите вниз до Github Pages, под источником вы не увидите ничего, измените его на ветку Master, нажмите кнопку сохранения, а затем страница обновится. Снова прокрутите вниз, и там должно быть написано, что сайт опубликован или что-то в этом роде (я забыл;)) эта ссылка является ссылкой на ваше репо. Добавьте через. Cydia и готово! Он должен работать! Пожалуйста, не стесняйтесь размещать любые вопросы в комментариях.
